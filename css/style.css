@@ -15,6 +15,10 @@
     color: var(--dz-theme)
 }
 
+.bg-theme{
+    background-color: var(--dz-theme);
+}
+
 /*++++++++++++++++++++++++++
  Navbar 
  +++++++++++++++++++++++++++*/
@@ -72,8 +76,23 @@
     border-radius: 100px;
     background-color: var(--dz-theme);
 }
+
 .btn-theme:hover {
     font-weight: 600;
     color: var(--dz-theme);
     background-color: var(--dz-white);
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+    background-color: var(--dz-white);
+    clip-path: polygon(0 100%, 0 76%, 50% 92%, 100% 75%, 100% 100%);
+    border: none;
+}
+
+.mouse {
+    bottom: 6%;
+    left: 48.3%;
+    width: 50px !important;
 }
