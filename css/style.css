@@ -5,7 +5,7 @@
 :root {
     --dz-theme: #9746fd;
     --dz-white: #ffffff;
-    --dz-secondary: #c2c2c2;
+    --dz-secondary: #7a7a7a;
     --dz-dark-pink: #cb3378;
     --dz-dark: #0000;
 }
@@ -39,6 +39,22 @@
     font-weight: 600;
     color: var(--dz-theme);
     background-color: var(--dz-secondary);
+}
+
+.btn-light {
+    font-weight: 600;
+    color: var(--dz-theme);
+    padding-left: 10%;
+    border: none;
+    padding: 2% 5%;
+    border-radius: 100px;
+    background-color: var(--dz-white);
+}
+
+.btn-light:hover {
+    font-weight: 600;
+    color: var(--dz-white);
+    background-color: var(--dz-theme);
 }
 
 /*++++++++++++++++++++++++++
@@ -216,24 +232,15 @@ mockup and numbers of works
 }
 
 .section-mockup-mode .mockup-content .row div .content p {
-    font-size: 40px;
+    font-size: 25px;
+    font-weight: bold;
     color: var(--dz-white);
     margin: 0;
 }
 
-/* <div class="col-lg-4 col-12 mt-2">
-<div class="row justify-content-center">
-<div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
-style="width:80px; height: 80px;">
-<img src="images/creative.svg" alt="icon">
-</div>
-<h3 class="fw-light mt-2 text-center">Creative Design</h3>
-<p class="text-secondary text-center">
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-aliquam incidunt illo assumenda enim doloribus quod sunt dicta
-</p>
-</div>
-</div>*/
+/* +++++++++++++++++++++++++++
+Our Services 
++++++++++++++++++++++++++++*/
 .section-card-hover {
     transition: box-shadow 0.5s;
 }
@@ -268,99 +275,100 @@ aliquam incidunt illo assumenda enim doloribus quod sunt dicta
     width: 50px;
 }
 
+/* +++++++++++++++++++++++++++
+Brilliant Vision
++++++++++++++++++++++++++++*/
+.section-brilliant-vision {
+    background-image: url('../images/geometric.jpeg');
+    background-size: cover;
+    position: relative;
+    padding: 180px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
-/* <section class="section-card">
-            <div class="lines"></div>
-            <div class="lines"></div>
-            <div class="lines"></div>
-            <div class="lines"></div>
-            <div class="lines"></div>
-            <div class="section-card-heading">
-                <p class="text-secondary">awesome</p>
-                <h2>Our Services</h2>
-            </div>
-            <div class="lines"></div>
-            <div class="lines"></div>
+.section-brilliant-vision::before {
+    content: '';
+    background-color: #232f3d;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
-            <div class="container mt-4 row justify-content-center">
-                <div class="col-lg-4 col-12 mt-2">
-                    <div class="row justify-content-center">
-                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
-                            style="width:80px; height: 80px;">
-                            <img src="images/creative.svg" alt="icon">
-                        </div>
-                        <h3 class="fw-light mt-2 text-center">Creative Design</h3>
-                        <p class="text-secondary text-center">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-2">
-                    <div class="row justify-content-center">
-                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
-                            style="width:80px; height: 80px;">
-                            <img src="images/massive.svg" alt="icon">
-                        </div>
-                        <h3 class="fw-light mt-2 text-center">Massive Elements</h3>
-                        <p class="text-secondary text-center">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-2">
-                    <div class="row justify-content-center">
-                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
-                            style="width:80px; height: 80px;">
-                            <img src="images/responsive.svg" alt="icon">
-                        </div>
-                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
-                        <p class="text-secondary text-center">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-2">
-                    <div class="row justify-content-center">
-                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
-                            style="width:80px; height: 80px;">
-                            <img src="images/responsive.svg" alt="icon">
-                        </div>
-                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
-                        <p class="text-secondary text-center">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-2">
-                    <div class="row justify-content-center">
-                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
-                            style="width:80px; height: 80px;">
-                            <img src="images/responsive.svg" alt="icon">
-                        </div>
-                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
-                        <p class="text-secondary text-center">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-2">
-                    <div class="row">   
-                        <div class="border" style="width:80px; height: 80px;">
-                            <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
-                                style="width:80px; height: 80px;">
-                                <img src="images/responsive.svg" alt="icon">
-                            </div>
-                        </div>
-                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
-                        <p class="text-secondary text-center">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
-                        </p>
-                    </div>
-                </div>
-        </section> */
+.section-brilliant-vision::after {
+    content: '';
+    clip-path: polygon(0 100%, 0 76%, 50% 92%, 100% 75%, 100% 100%);
+    opacity: 1;
+    width: 100%;
+    background-color: #fff;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 9;
+}
+
+.section-brilliant-vision div .section-brilliant-vision-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    z-index: 9;
+}
+
+
+.section-brilliant-vision div .section-brilliant-vision-content span {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+.section-brilliant-vision div .section-brilliant-vision-content p {
+    text-align: center;
+    padding: 0 28%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.section-brilliant-vision div .section-brilliant-vision-content .lines {
+    margin-top: 10px;
+    content: '';
+    width: 4px;
+    height: 16px;
+    border-radius: 26px;
+    z-index: 9;
+    background-color: var(--dz-theme);
+}
+
+/* +++++++++++++++++++++++++++
+Our Portfolio
++++++++++++++++++++++++++++*/
+.portfolio-nav {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.portfolio-nav .filter-button {
+    text-decoration: none;
+    color: var(--dz-secondary);
+}
+
+.portfolio-nav .filter-button:hover {
+    cursor: pointer;
+    color: var(--dz-theme);
+}
+
+.portfolio-nav>.filter-button.active {
+    font-weight: bold;
+    color: var(--dz-theme);
+}
