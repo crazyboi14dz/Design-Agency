@@ -5,6 +5,9 @@
 :root {
     --dz-theme: #9746fd;
     --dz-white: #ffffff;
+    --dz-secondary: #c2c2c2;
+    --dz-dark-pink: #cb3378;
+    --dz-dark: #0000;
 }
 
 .theme-color {
@@ -19,71 +22,6 @@
     background-color: var(--dz-theme);
 }
 
-.lower-element {
-    z-index: 1;
-}
-
-.higher-element {
-    z-index: 2;
-}
-
-/*++++++++++++++++++++++++++
- Navbar 
- +++++++++++++++++++++++++++*/
-.custom-navbar {
-    background-color: rgba(35, 47, 61, 0.9);
-}
-
-.banner-overlay {
-    position: relative;
-}
-
-.banner-overlay img {
-    display: block;
-    width: 100%;
-}
-
-.banner-overlay::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(35, 47, 61, 0.9);
-    z-index: 1;
-}
-
-.banner-overlay::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30%;
-    margin-bottom: -1px;
-    background-color: var(--dz-white);
-    clip-path: polygon(0 100%, 0 76%, 50% 92%, 100% 75%, 100% 100%);
-    border: none;
-    z-index: 2;
-}
-
-
-.banner-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-.banner-title {
-    font-size: 4rem;
-    font-weight: bolder;
-}
-
-.custom-letter-spacing {
-    letter-spacing: 20px;
-}
 
 /*++++++++++++++++++++++++++
  buttons
@@ -100,19 +38,329 @@
 .btn-theme:hover {
     font-weight: 600;
     color: var(--dz-theme);
-    background-color: var(--dz-white);
+    background-color: var(--dz-secondary);
 }
 
-/* .shape {
-    width: 200px;
-    height: 200px;
-    background-color: var(--dz-white);
+/*++++++++++++++++++++++++++
+ Navbar 
+ +++++++++++++++++++++++++++*/
+.custom-navbar {
+    background-color: rgba(35, 47, 61, 0.9);
+}
+
+/* +++++++++++++++++++++++++++
+Banner 
++++++++++++++++++++++++++++*/
+.section-banner-mode {
+    background-image: url('../images/header-image.png');
+    background-size: cover;
+    position: relative;
+    padding: 240px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.section-banner-mode::before {
+    content: '';
+    background-color: #232f3d;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-banner-mode::after {
+    content: '';
     clip-path: polygon(0 100%, 0 76%, 50% 92%, 100% 75%, 100% 100%);
-    border: none;
-} */
-
-.mouse {
-    bottom: 6%;
-    left: 48.5%;
-    width: 40px !important;
+    opacity: 1;
+    width: 100%;
+    background-color: #fff;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 9;
 }
+
+.section-banner-mode .banner-content {
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    text-transform: uppercase;
+}
+
+.section-banner-mode .banner-content span {
+    font-size: 23px;
+    letter-spacing: 25px;
+    font-weight: 700;
+}
+
+.section-banner-mode .banner-content h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.section-banner-mode .banner-content p {
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.section-banner-mode .mouse-pointer-btn {
+    width: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 8;
+}
+
+/*+++++++++++++++++++++++++++ 
+About Agency 
++++++++++++++++++++++++++++*/
+.section-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-card .lines {
+    margin-top: 10px;
+    content: '';
+    width: 4px;
+    height: 16px;
+    border-radius: 26px;
+    background-color: var(--dz-theme);
+}
+
+.section-card .section-card-heading {
+    padding: 16px;
+}
+
+.section-card .section-card-heading p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.section-card .section-card-heading h2 {
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+
+/* +++++++++++++++++++++++++++
+mockup and numbers of works 
++++++++++++++++++++++++++++*/
+.section-mockup-mode {
+    background-image: url('../images/geometric.jpeg');
+    background-size: cover;
+    position: relative;
+    padding: 180px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.section-mockup-mode::before {
+    content: '';
+    background-color: #232f3d;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-mockup-mode::after {
+    content: '';
+    clip-path: polygon(0 100%, 0 76%, 50% 92%, 100% 75%, 100% 100%);
+    opacity: 1;
+    width: 100%;
+    background-color: #fff;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 9;
+}
+
+.section-mockup-mode .mockup-content {
+    padding: 0 100px;
+}
+
+.section-mockup-mode .mockup-content .row div .content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+    z-index: 9;
+}
+
+.section-mockup-mode .mockup-content .row div .content img {
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+.section-mockup-mode .mockup-content .row div .content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--dz-dark-pink);
+    margin: 0;
+}
+
+.section-mockup-mode .mockup-content .row div .content p {
+    font-size: 40px;
+    color: var(--dz-white);
+    margin: 0;
+}
+
+/* <div class="col-lg-4 col-12 mt-2">
+<div class="row justify-content-center">
+<div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
+style="width:80px; height: 80px;">
+<img src="images/creative.svg" alt="icon">
+</div>
+<h3 class="fw-light mt-2 text-center">Creative Design</h3>
+<p class="text-secondary text-center">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+aliquam incidunt illo assumenda enim doloribus quod sunt dicta
+</p>
+</div>
+</div>*/
+.section-card-hover {
+    transition: box-shadow 0.5s;
+}
+
+.section-card .section-card-hover:hover {
+    box-shadow: 0px 0px 39px -4px rgba(0, 0, 0, 0.20);
+}
+
+.section-card .card-icon-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--dz-theme);
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+
+.section-card .card-icon-border .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dz-theme);
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+}
+
+.section-card .card-icon-border .card-icon img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* <section class="section-card">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="section-card-heading">
+                <p class="text-secondary">awesome</p>
+                <h2>Our Services</h2>
+            </div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+
+            <div class="container mt-4 row justify-content-center">
+                <div class="col-lg-4 col-12 mt-2">
+                    <div class="row justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
+                            style="width:80px; height: 80px;">
+                            <img src="images/creative.svg" alt="icon">
+                        </div>
+                        <h3 class="fw-light mt-2 text-center">Creative Design</h3>
+                        <p class="text-secondary text-center">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mt-2">
+                    <div class="row justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
+                            style="width:80px; height: 80px;">
+                            <img src="images/massive.svg" alt="icon">
+                        </div>
+                        <h3 class="fw-light mt-2 text-center">Massive Elements</h3>
+                        <p class="text-secondary text-center">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mt-2">
+                    <div class="row justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
+                            style="width:80px; height: 80px;">
+                            <img src="images/responsive.svg" alt="icon">
+                        </div>
+                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
+                        <p class="text-secondary text-center">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mt-2">
+                    <div class="row justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
+                            style="width:80px; height: 80px;">
+                            <img src="images/responsive.svg" alt="icon">
+                        </div>
+                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
+                        <p class="text-secondary text-center">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mt-2">
+                    <div class="row justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
+                            style="width:80px; height: 80px;">
+                            <img src="images/responsive.svg" alt="icon">
+                        </div>
+                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
+                        <p class="text-secondary text-center">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mt-2">
+                    <div class="row">   
+                        <div class="border" style="width:80px; height: 80px;">
+                            <div class="d-flex justify-content-center align-items-center bg-theme rounded-circle"
+                                style="width:80px; height: 80px;">
+                                <img src="images/responsive.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="fw-light mt-2 text-center">Responsive Layout</h3>
+                        <p class="text-secondary text-center">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                            aliquam incidunt illo assumenda enim doloribus quod sunt dicta
+                        </p>
+                    </div>
+                </div>
+        </section> */
