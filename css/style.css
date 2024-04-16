@@ -14,6 +14,10 @@
     color: var(--dz-theme);
 }
 
+.dark-pink-color{
+    color: var(--dz-dark-pink);
+}
+
 .theme-active {
     color: var(--dz-theme)
 }
@@ -353,7 +357,7 @@ Our Portfolio
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 50px;
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -371,4 +375,56 @@ Our Portfolio
 .portfolio-nav>.filter-button.active {
     font-weight: bold;
     color: var(--dz-theme);
+}
+
+/* +++++++++++++++++++++++++++
+Our Testimonials
++++++++++++++++++++++++++++*/
+.section-testimonial {
+    background-image: url('../images/geometric.jpeg');
+    background-size: cover;
+    position: relative;
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.section-testimonial::before {
+    content: '';
+    background-color: #232f3d;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-testimonial::after {
+    content: '';
+    clip-path: polygon(0 100%, 0 76%, 50% 92%, 100% 75%, 100% 100%);
+    opacity: 1;
+    width: 100%;
+    background-color: #fff;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 9;
+}
+
+.section-testimonial div .section-testimonial-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    z-index: 9;
+}
+
+.section-testimonial div .section-testimonial-content img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
 }
