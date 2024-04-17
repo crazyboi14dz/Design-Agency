@@ -7,14 +7,14 @@
     --dz-white: #ffffff;
     --dz-secondary: #7a7a7a;
     --dz-dark-pink: #cb3378;
-    --dz-dark: #0000;
+    --dz-dark: #000000;
 }
 
 .theme-color {
     color: var(--dz-theme);
 }
 
-.dark-pink-color{
+.dark-pink-color {
     color: var(--dz-dark-pink);
 }
 
@@ -172,7 +172,6 @@ About Agency
     font-weight: lighter;
     font-size: 40px;
 }
-
 
 /* +++++++++++++++++++++++++++
 mockup and numbers of works 
@@ -356,8 +355,7 @@ Our Portfolio
 .portfolio-nav {
     text-transform: uppercase;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -423,8 +421,107 @@ Our Testimonials
     z-index: 9;
 }
 
-.section-testimonial div .section-testimonial-content img{
+.section-testimonial div .section-testimonial-content img {
     height: 100px;
     width: 100px;
     border-radius: 100%;
+}
+
+/* +++++++++++++++++++++++++++
+Contact Us
++++++++++++++++++++++++++++*/
+.section-form .form-grp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.section-form .form-grp img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.section-form .form-grp input[type="text"] {
+    height: 50px;
+}
+
+.section-form .form-grp .form-grp-input {
+    border: none;
+    border-left: 3px solid var(--dz-theme);
+    border-radius: 4px;
+    padding: 16px 16px;
+    box-shadow: 0px 0px 39px -4px rgba(0, 0, 0, 0.20);
+}
+
+.section-form .form-grp .form-grp-input:focus {
+    outline: 3px solid transparent;
+    border-left: 3px solid var(--dz-theme);
+    border-radius: 4px;
+}
+
+.section-form .form-grp .urname,
+.urmail,
+.urphone,
+.urmessage {
+    color: var(--dz-theme);
+}
+
+/* +++++++++++++++++++++++++++
+Contact Us - Get Social
++++++++++++++++++++++++++++*/
+
+.contact-card {
+    border-top: 3px solid var(--dz-theme);
+    border-radius: 4px;
+    padding: 18px 24px;
+    box-shadow: 0px 0px 39px -4px rgba(0, 0, 0, 0.20);
+}
+
+.contact-card h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 14px;
+    color: var(--dz-dark);
+}
+
+.contact-card .contact-card-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-card .contact-card-icons .card-icon {
+    background-color: var(--dz-theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 176px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.contact-card .contact-card-icons .card-icon img {
+    height: 40px;
+}
+
+/* +++++++++++++++++++++++++++
+Contact Us - Contact Info
++++++++++++++++++++++++++++*/
+
+.contact-card .contact-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.contact-card .contact-info img {
+    width: 20px;
+}
+
+.contact-card .contact-info p {
+    margin-bottom: 0;
+    margin-left: 10px;
+    color: var(--dz-secondary);
 }
