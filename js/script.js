@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // navlink active
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener("click", function () {
+      // Remove theme-active class from all links
+      navLinks.forEach(function (link) {
+        link.classList.remove("theme-active");
+      });
+
+      // Add theme-active class to the clicked link
+      this.classList.add("theme-active");
+    });
+  });
+
+  // filter portfolio
   var filterButtons = document.querySelectorAll(".filter-button");
 
   filterButtons.forEach(function (button) {

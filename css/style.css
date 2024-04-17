@@ -1,7 +1,3 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 :root {
     --dz-theme: #9746fd;
     --dz-white: #ffffff;
@@ -210,7 +206,7 @@ mockup and numbers of works
 }
 
 .section-mockup-mode .mockup-content {
-    padding: 0 100px;
+    padding: 0 180px;
 }
 
 .section-mockup-mode .mockup-content .row div .content {
@@ -228,7 +224,7 @@ mockup and numbers of works
 }
 
 .section-mockup-mode .mockup-content .row div .content h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     color: var(--dz-dark-pink);
     margin: 0;
@@ -248,7 +244,11 @@ Our Services
     transition: box-shadow 0.5s;
 }
 
-.section-card .section-card-hover:hover {
+.section-card .section-card-active {
+    box-shadow: 0px 0px 39px -4px rgba(0, 0, 0, 0.20);
+}
+
+.section-card:not(.section-card-active) .section-card-hover:hover {
     box-shadow: 0px 0px 39px -4px rgba(0, 0, 0, 0.20);
 }
 
@@ -355,9 +355,11 @@ Our Portfolio
 .portfolio-nav {
     text-transform: uppercase;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .portfolio-nav .filter-button {
@@ -374,6 +376,38 @@ Our Portfolio
     font-weight: bold;
     color: var(--dz-theme);
 }
+
+.filter-grid {
+    margin: 20px auto;
+    columns: 3;
+    column-gap: 20px;
+}
+
+.filter-grid .filter {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.filter-grid .filter img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width:1200px) {
+    .filter-grid {
+        width: calc(100% - 40px);
+        columns: 2;
+    }
+}
+
+@media (max-width:768px) {
+    .filter-grid {
+        columns: 1;
+    }
+}
+
+
 
 /* +++++++++++++++++++++++++++
 Our Testimonials

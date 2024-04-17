@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <div class="container-fluid p-0">
+        <div id="home" class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="images/logo.png" alt="logo" width="250">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,19 +27,22 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase fw-bold">
                             <li class="nav-item">
-                                <a class="nav-link theme-active" aria-current="page">Home</a>
+                                <a class="nav-link theme-active" href="#home" aria-current="page">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">Services</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">Testimonials</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">Contacts</a>
+                                <a class="nav-link" href="#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -61,7 +64,7 @@
         </section>
 
 
-        <section class="section-card">
+        <section class="section-card" id="about">
             <div class="lines"></div>
             <div class="lines"></div>
             <div class="lines"></div>
@@ -164,7 +167,7 @@
             </div>
         </section>
 
-        <section class="section-card">
+        <section id="services" class="section-card">
             <div class="lines"></div>
             <div class="lines"></div>
             <div class="lines"></div>
@@ -196,7 +199,7 @@
                     </div>
                     <!-- card -->
                     <div class="col-lg-4 col-12 mt-5">
-                        <div class="section-card mb-5 section-card-hover">
+                        <div class="section-card mb-5 section-card-hover section-card-active">
                             <div class="card-icon-border">
                                 <div class="card-icon">
                                     <img src="images/brochure.svg" alt="Brochure Design">
@@ -290,8 +293,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="section-card my-5">
+        <section class="section-card my-5" id="portfolio">
             <div class="section-card-heading">
                 <p class="text-secondary">AWESOME</p>
                 <h2>Our Portfolio</h2>
@@ -308,51 +310,51 @@
                     <a class="filter-button" data-filter="packagingdesign">Packaging Design</a>
                     <a class="filter-button" data-filter="webdesign">WebDesign</a>
                 </div>
-                <div class="row" data-masonry='{"percentPosition": true }'>
-                    <div class="my-3 col-4 filter branding">
-                        <img src="images/branding01.jpeg" class="w-100 rounded" alt="branding">
+                <div class="filter-grid">
+                    <div class="filter branding">
+                        <img src="images/branding01.jpeg" alt="branding">
                     </div>
-                    <div class="my-3 col-4 filter branding">
-                        <img src="images/branding02.jpg" class="w-100 rounded" alt="branding">
+                    <div class="filter branding">
+                        <img src="images/branding02.jpg" alt="branding">
                     </div>
-                    <div class="my-3 col-4 filter illustration">
-                        <img src="images/illustration04.jpg" class="w-100 rounded" alt="illustration">
+                    <div class="filter illustration">
+                        <img src="images/illustration04.jpg" alt="illustration">
                     </div>
-                    <div class="my-3 col-4 filter logo">
-                        <img src="images/logo01.png" class="w-100 rounded" alt="logo">
+                    <div class="filter logo">
+                        <img src="images/logo01.png" alt="logo">
                     </div>
-                    <div class="my-3 col-4 filter illustration">
-                        <img src="images/illustration01.jpeg" class="w-100 rounded" alt="illustration">
+                    <div class="filter illustration">
+                        <img src="images/illustration01.jpeg" alt="illustration">
                     </div>
-                    <div class="my-3 col-4 filter packagingdesign">
-                        <img src="images/packagingdesign03.avif" class="w-100 rounded" alt="packagingdesign">
+                    <div class="filter packagingdesign">
+                        <img src="images/packagingdesign03.avif" alt="packagingdesign">
                     </div>
-                    <div class="my-3 col-4 filter webdesign">
-                        <img src="images/webdesign01.jpeg" class="w-100  rounded" alt="webdesign">
+                    <div class="filter webdesign">
+                        <img src="images/webdesign01.jpeg" alt="webdesign">
                     </div>
-                    <div class="my-3 col-4 filter packagingdesign">
-                        <img src="images/packagingdesign02.jpeg" class="w-100 rounded" alt="packagingdesign">
+                    <div class="filter packagingdesign">
+                        <img src="images/packagingdesign02.jpeg" alt="packagingdesign">
                     </div>
-                    <div class="my-3 col-4 filter webdesign">
-                        <img src="images/webdesign02.jpg" class="w-100 rounded" alt="webdesign">
+                    <div class="filter webdesign">
+                        <img src="images/webdesign02.jpg" alt="webdesign">
                     </div>
-                    <div class="my-3 col-4 filter logo">
-                        <img src="images/logo02.jpeg" class="w-100 rounded" alt="logo">
+                    <div class="filter logo">
+                        <img src="images/logo02.jpeg" alt="logo">
                     </div>
-                    <div class="my-3 col-4 filter branding">
-                        <img src="images/branding03.jpg" class="w-100 rounded" alt="branding">
+                    <div class="filter branding">
+                        <img src="images/branding03.jpg" alt="branding">
                     </div>
-                    <div class="my-3 col-4 filter illustration">
-                        <img src="images/illustration02.jpg" class="w-100 rounded" alt="illustration">
+                    <div class="filter illustration">
+                        <img src="images/illustration02.jpg" alt="illustration">
                     </div>
-                    <div class="my-3 col-4 filter branding">
-                        <img src="images/branding04.jpg" class="w-100  rounded" alt="branding">
+                    <div class="filter branding">
+                        <img src="images/branding04.jpg" alt="branding">
                     </div>
-                    <div class="my-3 col-4 filter packagingdesign">
-                        <img src="images/packagingdesign01.jpeg" class="w-100 rounded" alt="packagingdesign">
+                    <div class="filter packagingdesign">
+                        <img src="images/packagingdesign01.jpeg" alt="packagingdesign">
                     </div>
-                    <div class="my-3 col-4 filter illustration">
-                        <img src="images/illustration03.png" class="w-100 rounded" alt="illustration">
+                    <div class="filter illustration">
+                        <img src="images/illustration03.png" alt="illustration">
                     </div>
                 </div>
             </div>
@@ -361,7 +363,7 @@
             <button type="button" class="btn btn-theme text-uppercase mt-4">Load more</button>
         </section>
 
-        <section class="mt-5">
+        <section class="mt-5" id="testimonials">
             <div class="section-testimonial">
                 <div class="container">
                     <div class="section-testimonial-content">
@@ -379,9 +381,10 @@
                                 <div class="carousel-item active">
                                     <div class="d-flex justify-content-center align-items-center flex-column gap-1">
                                         <img src="images/testimonial01.jpg" alt="testimonial image">
-                                        <h5 class="text-white">Dillip Sahoo</h5>
-                                        <p class="fs-3 fw-light dark-pink-color">Web Technologies</p>
-                                        <p class="px-5 text-center text-white">Meet the most advanced live website
+                                        <h2 class="text-white">Dillip Sahoo</h2>
+                                        <p class="fw-light dark-pink-color">Web Technologies</p>
+                                        <p class="px-5 text-center text-white fst-italic">Meet the most advanced live
+                                            website
                                             builder on WordPress. Featuring latest
                                             web technology. Meet the most advanced live website builder on WordPress.
                                             Featuring latest web
@@ -391,9 +394,10 @@
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center flex-column gap-1">
                                         <img src="images/testimonial02.png" alt="testimonial image">
-                                        <h5 class="text-white">Beardo Dude</h5>
-                                        <p class="fs-3 fw-light dark-pink-color">Web Technologies</p>
-                                        <p class="px-5 text-center text-white">Meet the most advanced live website
+                                        <h2 class="text-white">Beardo Dude</h2>
+                                        <p class="fw-light dark-pink-color">Web Technologies</p>
+                                        <p class="px-5 text-center text-white fst-italic">Meet the most advanced live
+                                            website
                                             builder on WordPress. Featuring latest
                                             web technology. Meet the most advanced live website builder on WordPress.
                                             Featuring latest web
@@ -403,9 +407,10 @@
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center flex-column gap-1">
                                         <img src="images/testimonial03.png" alt="testimonial image">
-                                        <h5 class="text-white">Goat Dude</h5>
-                                        <p class="fs-3 fw-light dark-pink-color">Web Technologies</p>
-                                        <p class="px-5 text-center text-white">Meet the most advanced live website
+                                        <h2 class="text-white">Goat Dude</h2>
+                                        <p class="fw-light dark-pink-color">Web Technologies</p>
+                                        <p class="px-5 text-center text-white fst-italic">Meet the most advanced live
+                                            website
                                             builder on WordPress. Featuring latest
                                             web technology. Meet the most advanced live website builder on WordPress.
                                             Featuring latest web
@@ -420,7 +425,7 @@
             </div>
         </section>
 
-        <section class=" my-5">
+        <section class=" my-5" id="contacts">
             <div class="section-card">
                 <div class="lines"></div>
                 <div class="lines"></div>
@@ -479,19 +484,24 @@
                             <h3>Get Social</h3>
                             <div class="contact-card-icons">
                                 <div class="card-icon">
-                                    <img src="images/facebook.svg" alt="facebook"
-                                        href="https://www.facebook.com/crazyboi14dz/">
+                                    <a href="https://www.facebook.com/crazyboi14dz/" target="_blank">
+                                        <img src="images/facebook.svg" alt="facebook">
+                                    </a>
                                 </div>
                                 <div class="card-icon">
-                                    <img src="images/twitter.svg" alt="twitter" href="https://twitter.com/14dzCrazyboi">
+                                    <a href="https://twitter.com/14dzCrazyboi" target="_blank">
+                                        <img src="images/twitter.svg" alt="twitter">
+                                    </a>
                                 </div>
                                 <div class="card-icon">
-                                    <img src="images/instagram.svg" alt="facebook"
-                                        href="https://instagram.com/crazyboi_14dz">
+                                    <a href="https://instagram.com/crazyboi_14dz" target="_blank">
+                                        <img src="images/instagram.svg" alt="facebook">
+                                    </a>
                                 </div>
                                 <div class="card-icon">
-                                    <img src="images/youtube.svg" alt="facebook"
-                                        href="https://youtube.com/@crazyboi14dz">
+                                    <a href="https://youtube.com/@crazyboi14dz" target="_blank">
+                                        <img src="images/youtube.svg" alt="facebook">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -528,23 +538,18 @@
         <div class="section-footer">
             <div class="footer-content">
                 <div class="content text-white">
-                    <p>Copyright &copy; 2024 Development by <a
-                        href="https://bento.me/crazyboi14dz" class="text-decoration-none theme-color">crazyboi14dz</a> and Designed by <a
-                            href="https://www.behance.net/gallery/87679175/Design-Agency" class="text-decoration-none theme-color">ZAHID HABIB</a></p>
+                    <p>Copyright &copy; 2024 Developed by <a href="https://bento.me/crazyboi14dz"
+                            class="text-decoration-none theme-color">crazyboi14dz</a> and Designed by <a
+                            href="https://www.behance.net/gallery/87679175/Design-Agency"
+                            class="text-decoration-none theme-color">ZAHID HABIB</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- Masonry -->
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-        async></script>
-
     <script src="js/script.js"></script>
 </body>
 
